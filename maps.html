@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAPS</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://res.cloudinary.com/vyomyquu/image/upload/v1792255176/aow_logo_04.54d1a26558ef66af9ae0_mcfp8e.webp" type="image/x-icon">
+</head>
+<body class="bg-[#161a1e] bg-[linear-gradient(to_right,rgba(8,197,255,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(8,197,255,0.15)_1px,transparent_1px)] bg-[size:40px_40px]">
+
+  <!-- HEADER  -->
+   
+  <header class="bg-[#081018] text-[#53eafd] flex justify-center items-center h-40 border-b border-b-2">
+    <h1 class="uppercase text-[40px] font-black font-[Orbitron] drop-shadow-[0_0_4px_#08c5ff]">
+      maps
+    </h1>
+  </header>
+
+  <!-- MAPS CATEGORY --> 
+      
+
+  <main >
+
+    <div class="mt-2 px-10">
+      <h2 class="text-[#53eafd] text-xl font-bold font-[Orbitron] mb-6">
+        Select a Map Category
+      </h2>
+    </div>
+    
+
+    <section class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 p-10 gap-4 border-b border-b-[#53eafd]">
+
+      <!-- AUTUMN -->
+      <a href="" data-category="Autumn" class="map-category flex bg-[#25344e] p-4 items-center justify-center rounded-[20px] border border-[#53eafd] group hover:shadow-[0_0_12px_6px_rgba(8,197,255,0.4)] transition-all duration-300 hover:scale-105 ">
+        <p class="text-[#53eafd] font-bold font-[Orbitron] group-hover:drop-shadow-[0_0_4px_#08c5ff]">
+          Autumn
+        </p>
+      </a>
+
+      <!-- WINTER -->
+
+      <a href="" data-category="Winter" class="map-category flex bg-[#25344e] p-4 items-center justify-center rounded-[20px] border border-[#53eafd] group hover:shadow-[0_0_12px_6px_rgba(8,197,255,0.4)] transition-all duration-300 hover:scale-105 ">
+        <p class="text-[#53eafd] font-bold font-[Orbitron] group-hover:drop-shadow-[0_0_4px_#08c5ff]">
+          Winter
+        </p>
+      </a>
+      
+      <!-- DESERT -->
+
+      <a href="" data-category="Desert" class="map-category flex bg-[#25344e] p-4 items-center justify-center rounded-[20px] border border-[#53eafd] group hover:shadow-[0_0_12px_6px_rgba(8,197,255,0.4)] transition-all duration-300 hover:scale-105 ">
+        <p class="text-[#53eafd] font-bold font-[Orbitron] group-hover:drop-shadow-[0_0_4px_#08c5ff]">
+          Desert
+        </p>
+      </a>
+
+      <!-- JUNGLE -->
+
+      <a href="" data-category="Jungle" class="map-category flex bg-[#25344e] p-4 items-center justify-center rounded-[20px] border border-[#53eafd] group hover:shadow-[0_0_12px_6px_rgba(8,197,255,0.4)] transition-all duration-300 hover:scale-105 ">
+        <p class="text-[#53eafd] font-bold font-[Orbitron] group-hover:drop-shadow-[0_0_4px_#08c5ff]">
+          Jungle
+        </p>
+      </a>
+
+      <!-- MIDLAND -->
+
+      <a href="#" data-category="Mid-Land" class="map-category flex bg-[#25344e] p-4 items-center justify-center rounded-[20px] border border-[#53eafd] group hover:shadow-[0_0_12px_6px_rgba(8,197,255,0.4)] transition-all duration-300 hover:scale-105 ">
+        <p class="text-[#53eafd] font-bold font-[Orbitron] group-hover:drop-shadow-[0_0_4px_#08c5ff]">
+          Mid-Land
+        </p>
+      </a>
+    </section>
+
+    <section class="px-10 py-3 flex justify-between">
+      <div class="flex flex-col gap-2 md:gap-4 lg:gap-4 ">
+        <h1 class="uppercase text-[#53eafd] font-[Orbitron] font-bold text-[16px] md:text-[20px] lg:text-[20px] ">
+        available maps
+      </h1>
+
+      <p class="text-gray-400 font-[Orbitron] font-semibold">
+        Select a category above to view its maps.
+      </p>
+      </div>
+      
+
+      <button type="button" class="text-[#53eafd] font-bold font-[Orbitron] border px-4 lg:px-6 rounded-xl cursor-pointer">
+        Show All Maps
+      </button>
+    </section>
+
+<!-- MAP DISPLAY SECTION -->
+
+<!-- MAP GALLERY -->
+<section id="map-gallery" class="px-10 pb-10">
+  <h2 id="gallery-title" class="text-[#53eafd] text-2xl font-bold font-[Orbitron] mb-6">
+    Select a Map Category
+  </h2>
+
+  <div id="map-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Map images will appear here -->
+  </div>
+</section>
+
+  </main>
+</body>
+</html>

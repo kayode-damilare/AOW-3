@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Units</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://res.cloudinary.com/vyomyquu/image/upload/v1792255176/aow_logo_04.54d1a26558ef66af9ae0_mcfp8e.webp" type="image/x-icon">
+</head>
+<body class="bg-[#161a1e] bg-[linear-gradient(to_right,rgba(8,197,255,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(8,197,255,0.15)_1px,transparent_1px)] bg-[size:40px_40px]">
+
+  <!-- HEADER -->
+
+  <header class="bg-[#081018] text-[#53eafd] flex justify-center items-center h-40 border-b border-b-2">
+    <h1 class="uppercase text-[40px] font-black font-[Orbitron] drop-shadow-[0_0_4px_#08c5ff]">
+      units
+    </h1>
+  </header>
+
+  <!-- MAIN CONTENT -->
+
+  <main>
+
+    <section class="flex flex-col gap-3 md:flex-row lg:flex-row justify-between p-4 lg:p-10 border-b-2 border-b-[#53eafd] bg-linear-to-b from-[#25344e] to-[#581C1C] lg:bg-linear-to-r md:bg-linear-to-r">
+
+      <!-- CONFEDERATION -->
+      <button type="button" id="confederation-btn" class="uppercase text-[#53eafd] bg-[#25344e] font-bold text-2xl font-[Orbitron] border py-4 px-10 rounded-2xl hover:shadow-[0_0_12px_6px_rgba(8,197,255,0.4)] transition-all duration-300 hover:scale-105 drop-shadow-[0_0_4px_#08c5ff]">
+        confederation
+      </button>
+
+      <!-- RESISTANCE -->
+      <button type="button" id="resistance-btn" class="uppercase text-[red] bg-[#581C1C] font-bold text-2xl font-[Orbitron] border py-4 px-10 rounded-2xl hover:shadow-[0_0_12px_6px_rgba(88,28,28,1.0)] transition-all duration-300 hover:scale-105 drop-shadow-[0_0_6px_#FF0000]">
+        resistance
+      </button>
+    </section>
+
+    <section class="p-10">
+      <p class="text-[#53eafd] font-semibold font-[Orbitron]">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quod accusamus laboriosam, sed dicta ratione libero voluptate perspiciatis animi dolores nihil repellat! Nisi ut neque quam mollitia accusamus dicta repudiandae?
+      </p>
+    </section>
+
+    <!-- UNITS DISPLAY SECTION -->
+
+    <!-- CONFEDERATION UNITS (visible by default) -->
+
+    <section id="confederation-units" class="grid p-10 gap-2 md:gap-3 lg:gap-4 grid-cols-3 lg:grid-cols-5 md:grid-cols-3">
+
+    <!-- ASSAULT -->
+
+    <button type="button" data-unit="assault" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Assault</p>
+      <img src="https://res.cloudinary.com/vyomyquu/image/upload/v1792320985/assault.4a60030928b52bee5919_xpfuh7.webp" alt="Assault" class="h-fit">
+    </button>
+
+    <!-- HEAVY ASSAULT -->
+
+    <button type="button" data-unit="heavy-assault" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Heavy Assault</p>
+      <img src="https://art-of-war.vercel.app/static/media/heavy-assault.3ad12f87f00c08307da7.webp" alt="Heavy Assault" class="h-fit">
+    </button>
+
+    <!-- FIRE ASSAULT -->
+
+    <button type="button" data-unit="fire-assault" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Fire Assault</p>
+      <img src="https://art-of-war.vercel.app/static/media/fire-assault.66992944ce39e25cbc0d.webp" alt="Fire Assault" class="h-fit">
+    </button>
+
+    <!-- FORTRESS -->
+
+    <button type="button" data-unit="fortress" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Fortress</p>
+      <img src="https://art-of-war.vercel.app/static/media/fortress.a532275084c87d5ebd25.webp" alt="Fortress" class="h-fit">
+    </button>
+
+    <!-- HAMMER -->
+
+    <button type="button" data-unit="hammer" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Hammer</p>
+      <img src="https://art-of-war.vercel.app/static/media/hammer.70f88f58abb5483f8ada.webp" alt="Hammer" class="h-fit">
+    </button>
+
+    <!-- ZEUS -->
+
+    <button type="button" data-unit="zeus" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Zeus</p>
+      <img src="https://art-of-war.vercel.app/static/media/zeus.cf77cce5dc9ccadefcd8.webp" alt="Zeus" class="h-fit">
+    </button>
+
+    <!-- TYPHOON -->
+
+    <button type="button" data-unit="typhoon" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Typhoon</p>
+      <img src="https://art-of-war.vercel.app/static/media/typhoon.92da6404eb3cd26ca2a7.webp" alt="Typhoon" class="h-fit">
+    </button>
+
+    <!-- TORRENT -->
+
+    <button type="button" data-unit="torrent" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Torrent</p>
+      <img src="https://art-of-war.vercel.app/static/media/torrent.44c6d6c9ba6e0b16de62.webp" alt="Torrent" class="h-fit">
+    </button>
+
+    <!-- ENERGY SHIELD -->
+
+    <button type="button" data-unit="energy-shield" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Energy Shield</p>
+      <img src="https://art-of-war.vercel.app/static/media/energy-shield.95539c62d2daed99bf1e.webp" alt="Energy Shield" class="h-fit">
+    </button>
+
+    <!-- CYCLONE -->
+
+    <button type="button" data-unit="cyclone" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Cyclone</p>
+      <img src="https://art-of-war.vercel.app/static/media/cyclone.88b9058c494ad9fb3ff7.webp" alt="Cyclone" class="h-fit">
+    </button>
+
+    <!-- VERTEX -->
+
+    <button type="button" data-unit="vertex" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Vertex</p>
+      <img src="https://art-of-war.vercel.app/static/media/vertex.9844bbf246293d67f47f.webp" alt="Vertex" class="h-fit">
+    </button>
+
+    <!-- THOR -->
+
+    <button type="button" data-unit="thor" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Thor</p>
+      <img src="https://art-of-war.vercel.app/static/media/thor.2f54fe8a184b22b0a49b.webp" alt="Thor" class="h-fit">
+    </button>
+
+    <!-- DELTA -->
+
+    <button type="button" data-unit="delta" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Delta</p>
+      <img src="https://art-of-war.vercel.app/static/media/delta.eb304c97cbfcc288e9f4.webp" alt="Delta" class="h-fit">
+    </button>
+
+    <!-- VIKING -->
+
+    <button type="button" data-unit="viking" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Viking</p>
+      <img src="https://art-of-war.vercel.app/static/media/viking.0db99cbfaa7343681bce.webp" alt="Viking" class="h-fit">
+    </button>
+
+    <!-- POSEIDON -->
+
+    <button type="button" data-unit="poseidon" data-faction="confederation" class="unit-card flex flex-col items-center border border-[#53eafd] bg-[#25344e] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="text-[#53eafd] w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Poseidon</p>
+      <img src="https://art-of-war.vercel.app/static/media/poseidon.0787c7a99edf8b391c99.webp" alt="Poseidon" class="h-fit">
+    </button>
+
+    </section>
+
+    <!-- RESISTANCE UNITS (hidden until the Resistance button is clicked) -->
+    <!-- No "grid" class here on purpose: "hidden" and "grid" fight each other. The JS adds "grid" when it shows this section. -->
+
+    <section id="resistance-units" class="hidden p-10 gap-2 md:gap-3 lg:gap-4 grid-cols-3 lg:grid-cols-5 md:grid-cols-3">
+
+    <!-- RIFLEMAN -->
+
+    <button type="button" data-unit="rifleman" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Rifleman</p>
+      <img src="https://art-of-war.vercel.app/static/media/rifleman.4359900a5a0556531f60.webp" alt="Rifleman" class="h-fit">
+    </button>
+
+    <!-- GRENADIER -->
+
+    <button type="button" data-unit="grenadier" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Grenadier</p>
+      <img src="https://art-of-war.vercel.app/static/media/grenadier.55d66941aee1488da8fb.webp" alt="Grenadier" class="h-fit">
+    </button>
+
+    <!-- SNIPER -->
+
+    <button type="button" data-unit="sniper" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Sniper</p>
+      <img src="https://art-of-war.vercel.app/static/media/sniper.2bb3edd90692169feb41.webp" alt="Sniper" class="h-fit">
+    </button>
+
+    <!-- COYOTE -->
+
+    <button type="button" data-unit="coyote" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Coyote</p>
+      <img src="https://art-of-war.vercel.app/static/media/sniper.2bb3edd90692169feb41.webp" alt="Coyote" class="h-fit">
+    </button>
+
+    <!-- ARMADILLO -->
+
+    <button type="button" data-unit="armadillo" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Armadillo</p>
+      <img src="https://art-of-war.vercel.app/static/media/armadillo.26888785f4c22999f06d.webp" alt="Armadillo" class="h-fit">
+    </button>
+
+    <!-- JAGUAR -->
+
+    <button type="button" data-unit="jaguar" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Jaguar</p>
+      <img src="https://art-of-war.vercel.app/static/media/jaguar.b5cb67c396cc4d6bd60d.webp" alt="Jaguar" class="h-fit">
+    </button>
+
+    <!-- PORCUPINE -->
+
+    <button type="button" data-unit="porcupine" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Porcupine</p>
+      <img src="https://art-of-war.vercel.app/static/media/porcupine.1b47b72e9b43db56ff89.webp" alt="Porcupine" class="h-fit">
+    </button>
+
+    <!-- MAMMOTH -->
+
+    <button type="button" data-unit="mammoth" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Mammoth</p>
+      <img src="https://art-of-war.vercel.app/static/media/mammoth.5b8cc5e278844a42036e.webp" alt="Mammoth" class="h-fit">
+    </button>
+
+    <!-- CHAMELEON -->
+
+    <button type="button" data-unit="chameleon" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Chameleon</p>
+      <img src="https://art-of-war.vercel.app/static/media/chameleon.45d145650c19037754a2.webp" alt="Chameleon" class="h-fit">
+    </button>
+
+    <!-- DRAGONFLY -->
+
+    <button type="button" data-unit="dragonfly" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Dragonfly</p>
+      <img src="https://art-of-war.vercel.app/static/media/dragonfly.6a8b7d021b720807e0b4.webp" alt="Dragonfly" class="h-fit">
+    </button>
+
+    <!-- HAWK -->
+
+    <button type="button" data-unit="hawk" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Hawk</p>
+      <img src="https://art-of-war.vercel.app/static/media/hawk.440f6df799b702d26b8e.webp" alt="Hawk" class="h-fit">
+    </button>
+
+    <!-- ALBATROSS -->
+
+    <button type="button" data-unit="albatross" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Albatross</p>
+      <img src="https://art-of-war.vercel.app/static/media/albatross.0bcf1292764137fd317a.webp" alt="Albatross" class="h-fit">
+    </button>
+
+    <!-- CAIMAN -->
+
+    <button type="button" data-unit="caiman" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Caiman</p>
+      <img src="https://art-of-war.vercel.app/static/media/caiman.0ca43d7a7ffe03292cfe.webp" alt="Caiman" class="h-fit">
+    </button>
+
+    <!-- ALLIGATOR -->
+
+    <button type="button" data-unit="alligator" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Alligator</p>
+      <img src="https://art-of-war.vercel.app/static/media/alligator.560afd93798b12738d23.webp" alt="Alligator" class="h-fit">
+    </button>
+
+    <!-- BARRACUDA -->
+
+    <button type="button" data-unit="barracuda" data-faction="resistance" class="unit-card flex flex-col items-center border text-[red] bg-[#581C1C] max-h-[150px] md:max-h-[300px] lg:max-h-[300px] rounded-xl cursor-pointer hover:scale-105 transition-all duration-300">
+      <p class="w-full flex justify-center rounded-t-xl font-[Orbitron] text-[10px] md:text-[16px] lg:text-[16px] p-1">Barracuda</p>
+      <img src="https://art-of-war.vercel.app/static/media/barracuda.22dbd0a42fbe1e315886.webp" alt="Barracuda" class="h-fit">
+    </button>
+
+    </section>
+  </main>
+
+  <!-- UNIT POPUP -->
+  <!-- Hidden by default with the "hidden" class. Remove "hidden" to see it while styling. -->
+
+  <div id="unit-popup" class="hidden fixed inset-0 z-50 bg-[#161a1e] overflow-y-auto text-white font-[Orbitron]">
+
+    <!-- Close button -->
+    <button type="button" id="close-btn" class="absolute top-4 right-4 w-12 h-12 rounded-full bg-white text-black text-4xl leading-none flex items-center justify-center hover:scale-105 transition-all duration-300" aria-label="Close">
+      &times;
+    </button>
+
+    <!-- Previous unit -->
+    <button type="button" id="prev-btn" class="absolute left-2 top-1/2 text-5xl text-white hover:text-[#53eafd] px-2" aria-label="Previous unit">
+      &lsaquo;
+    </button>
+
+    <!-- Next unit -->
+    <button type="button" id="next-btn" class="absolute right-2 top-1/2 text-5xl text-white hover:text-[#53eafd] px-2" aria-label="Next unit">
+      &rsaquo;
+    </button>
+
+    <div class="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto px-16 py-16">
+
+      <!-- LEFT SIDE: name, type and picture -->
+      <div class="md:w-1/3 flex flex-col items-center md:border-r md:border-gray-600 md:pr-8">
+        <h2 id="popup-name" class="text-2xl font-bold text-center">Heavy Assault</h2>
+        <p id="popup-type" class="text-sm text-center mb-6">Heavy Assault Infantry</p>
+        <img id="popup-image" src="https://art-of-war.vercel.app/static/media/heavy-assault.3ad12f87f00c08307da7.webp" alt="Heavy Assault" class="w-48">
+      </div>
+
+      <!-- RIGHT SIDE: rank select and stats -->
+      <div class="md:w-2/3">
+
+        <label for="rank-select" class="block text-center font-bold text-xl mb-2">Select Rank:</label>
+        <select id="rank-select" class="w-full bg-[#25282c] border border-gray-600 rounded-md p-3 mb-4">
+          <option value="1">Rank 1</option>
+          <option value="2">Rank 2</option>
+          <option value="3">Rank 3</option>
+        </select>
+
+        <!-- UNIT STATS -->
+        <div id="popup-stats" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+
+          <div class="flex justify-between items-center bg-[#25282c] rounded-md px-4 py-3 ">
+            <span class="font-bold">HP:</span>
+            <span><i class="fa-solid fa-heart text-red-500"></i> <span id="stat-hp">0</span></span>
+          </div>
+          <div class="flex justify-between items-center bg-[#25282c] rounded-md px-4 py-3 ">
+            <span class="font-bold">Armor:</span>
+            <span><i class="fa-solid fa-shield text-green-500"></i> <span id="stat-armor">0</span></span>
+          </div>
+          <div class="flex justify-between items-center bg-[#25282c] rounded-md px-4 py-3 ">
+            <span class="font-bold">Speed:</span>
+            <span><i class="fa-solid fa-angles-right text-green-500"></i> <span id="stat-speed">0</span></span>
+          </div>
+          <div class="flex justify-between items-center bg-[#25282c] rounded-md px-4 py-3 ">
+            <span class="font-bold">View:</span>
+            <span><i class="fa-solid fa-eye text-cyan-400"></i> <span id="stat-view">0</span></span>
+          </div>
+          <div class="flex justify-between items-center bg-[#25282c] rounded-md px-4 py-3 ">
+            <span class="font-bold">Cost:</span>
+            <span><i class="fa-solid fa-cube text-orange-500"></i> <span id="stat-cost">0</span></span>
+          </div>
+          <div class="flex justify-between items-center bg-[#25282c] rounded-md px-4 py-3 ">
+            <span class="font-bold">Time:</span>
+            <span><i class="fa-solid fa-clock text-yellow-500"></i> <span id="stat-time">0</span></span>
+          </div>
+
+          <div class="flex justify-between items-center bg-[#25282c] rounded-md px-4 py-3 sm:col-span-2 sm:w-1/2 sm:mx-auto">
+            <span class="font-bold">CP:</span>
+            <span><i class="fa-solid fa-coins text-yellow-400"></i> <span id="stat-cp">0</span></span>
+          </div>
+        </div>
+
+        <!-- WEAPON DROPDOWN -->
+        <button type="button" id="weapon-toggle" class="w-full flex justify-between items-center mt-8 text-xl font-bold text-left">
+          <span id="popup-weapon">RL-100 Rocket Launcher</span>
+          <i id="weapon-arrow" class="fa-solid fa-chevron-down text-blue-500 transition-all duration-300"></i>
+        </button>
+
+        <!-- Hidden until the weapon button is clicked -->
+        <div id="weapon-stats" class="hidden mt-4">
+         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+
+          <div class="flex justify-between items-center bg-[#25282c] rounded-md px-4 py-3">
+            <span class="font-bold">Damage:</span>
+            <span id="weapon-damage">0</span>
+          </div>
+          <div class="flex justify-between items-center bg-[#25282c] rounded-md px-4 py-3">
+            <span class="font-bold">Range:</span>
+            <span id="weapon-range">0</span>
+          </div>
+          <div class="flex justify-between items-center bg-[#25282c] rounded-md px-4 py-3">
+            <span class="font-bold">Fire Rate:</span>
+            <span id="weapon-rate">0</span>
+          </div>
+         </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript: my partner will add it here -->
+  <script src="units.js"></script>
+</body>
+</html>
